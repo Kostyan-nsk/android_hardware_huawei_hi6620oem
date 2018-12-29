@@ -1,0 +1,13 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := libpn547_fw.c
+LOCAL_MODULE := libpn547_fw
+LOCAL_MODULE_OWNER := nxp
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS := optional
+LOCAL_PACK_MODULE_RELOCATIONS := false
+LOCAL_CLANG := false
+
+include $(BUILD_SHARED_LIBRARY)
