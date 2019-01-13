@@ -16,7 +16,6 @@
 
 
 LOCAL_PATH := $(call my-dir)
-include $(call all-subdir-makefiles)
 
 include $(CLEAR_VARS)
 
@@ -69,3 +68,5 @@ LOCAL_SRC_FILES := $(call all-cpp-source-files)
 LOCAL_SHARED_LIBRARIES := liblog libcutils libutils libdl libc
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
